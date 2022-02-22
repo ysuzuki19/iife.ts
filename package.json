@@ -1,5 +1,5 @@
 {
-  "name": "npm-package-template",
+  "name": "@ysuzuki/iife.ts",
   "version": "1.0.0",
   "description": "iife library for typescript",
   "main": "./dist/index.umd.min.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ysuzuki19/npm-package-template.git"
+    "url": "git+https://github.com/ysuzuki19/iife.ts.git"
   },
   "keywords": [
     "typescript",
@@ -27,9 +27,9 @@
   "author": "ysuzuki19 <ysuzuki.cpp@gmail.com> (https://ysuzuki19.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ysuzuki19/npm-package-template/issues"
+    "url": "https://github.com/ysuzuki19/iife.ts/issues"
   },
-  "homepage": "https://github.com/ysuzuki19/npm-package-template#readme",
+  "homepage": "https://github.com/ysuzuki19/iife.ts#readme",
   "devDependencies": {
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-typescript": "^8.3.0",
