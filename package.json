@@ -1,5 +1,5 @@
 {
-  "name": "@ysuzuki/iife.ts",
+  "name": "@ysuzuki19/iife.ts",
   "version": "1.0.0",
   "description": "iife library for typescript",
   "main": "./dist/index.umd.min.js",
