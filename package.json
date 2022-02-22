@@ -21,8 +21,7 @@
     "typescript",
     "npm",
     "package",
-    "rollup",
-    "template"
+    "iife"
   ],
   "author": "ysuzuki19 <ysuzuki.cpp@gmail.com> (https://ysuzuki19.github.io/)",
   "license": "MIT",
