@@ -1,28 +1,51 @@
-# npm package template
+# iife library for TypeScript
 
-Template repository for npm package
+```bash
+$ npm i @ysuzuki19/iife.ts
+```
 
-- typescript
-- 👁️public npm package
-- auto publish with github workflow
-- rollup
+# How to use
 
-# setup
+## Sync
 
-- exec `npm init`
-- set `NPM_TOKEN` in your github repository (in Github, `Settings/Secrets/Actions/New repository secret`)
-- rewrite `LibraryName` to your library-name in `rollup.config.js`.
+### After
 
-## Optional
+```typescript
+import iife from '@ysuzuki19/iife.ts';
 
-- if you develop react library, please uncomment some `external: ['react']`,`globals: { react: 'react' }` in `rollup.config.js`
-- replace `LICENSE`
+const num = iife(() => {
+  return 0;
+}); // num = 0;
 
-# how to publish
+const str = iife(() => {
+  return 'str';
+}); // str = 'str'
+```
 
-1. click `Create a new release`
-1. click `Choose a tag` and create new tag for your release
-1. write `Release title`
-1. write `Describe this release`
-1. click `Publish release`
-1. 🚀 auto start workflow and publish!!
+### Before
+
+```typescript
+const num = (() => {
+  return 0;
+})();
+
+const str = (() => {
+  return 'str';
+})();
+```
+
+## Async
+
+### Before
+
+```typescript
+const iife from '@ysuzuki19/iife.ts';
+
+const num = iife(async () => {
+  return 0;
+}); // num = Promise{0, ...}
+
+const str = iife(async () => {
+  return 'str';
+}); // str = Promise{'str', ...}
+```

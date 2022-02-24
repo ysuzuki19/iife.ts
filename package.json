@@ -1,6 +1,6 @@
 {
   "name": "@ysuzuki19/iife.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "iife library for typescript",
   "main": "./dist/index.umd.min.js",
   "module": "./dist/index.es.js",
